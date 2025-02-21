@@ -1,24 +1,24 @@
 # Font.
 font-family = "JetBrains Mono"
 font-feature = liga
-font-size = 14 
+font-size = 14
 font-thicken = true
 
 # Theme.
 theme = "pnevma"
-background = #0f0f0f 
+background = #011418
 
 # Window-specific settings.
 macos-titlebar-style = hidden
 macos-window-shadow = false
 window-padding-x = 30
-window-padding-y = 30 
-window-width = 93 
+window-padding-y = 30
+window-width = 93
 window-height = 25
 
-# Window background decoration. 
+# Window background decoration.
 background-blur-radius = 80
-background-opacity = 0.75
+background-opacity = 0.65
 
 # Misc.
 confirm-close-surface = false
