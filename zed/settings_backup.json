@@ -9,19 +9,17 @@
 {
   "languages": {
     "CSharp": {
-      "show_edit_predictions": false
+      "show_inline_completions": false
     },
     "Shell Script": {
-      "show_edit_predictions": true
+      "show_inline_completions": true
     },
     "Dart": {
-      "show_edit_predictions": true
+      "show_inline_completions": true
     }
   },
   "project_panel": {
-    "dock": "right",
-    "indent_size": 10,
-    "entry_spacing": "standard"
+    "dock": "right"
   },
   "vim_mode": true,
   "ui_font_size": 16,
