@@ -6,6 +6,9 @@ function fish_greeting
     echo "🕒 The time is "(set_color yellow; date +%T; set_color normal)
 end
 
+
+set -gx PATH /opt/homebrew/bin $PATH
+
 # ---- Eza (better ls) -----
 alias ls "eza --icons=always"
 
@@ -27,9 +30,7 @@ end
 
 # Add to PATH
 
-set -gx PATH /opt/homebrew/bin $PATH
 set -gx PATH /Users/drakon/bin/flutter/bin $PATH
 set -gx PATH /Users/drakon/zig/master/files $PATH
 set -gx PATH /Users/drakon/.local/bin $PATH
 set -gx PATH /Users/drakon/.local/pipx/venvs/frappe-bench $PATH
-set -gx PATH /opt/homebrew/opt/binutils/bin $PATH
