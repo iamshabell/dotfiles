@@ -22,3 +22,6 @@ background-opacity = 0.65
 
 # Misc.
 confirm-close-surface = false
+
+macos-icon-ghost-color = BCBEC4
+macos-icon-screen-color = 00FF00

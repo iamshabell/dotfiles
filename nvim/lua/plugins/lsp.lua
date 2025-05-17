@@ -30,7 +30,9 @@ return {
 					filetypes = { "vue", "javascript", "typescript" },
 				},
 				jdtls = {},
-				zls = {},
+				zls = {
+					filetypes = { "zig" },
+				},
 				cssls = {},
 				tailwindcss = {
 					root_dir = function(...)

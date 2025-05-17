@@ -1,5 +1,6 @@
 if status is-interactive
     # Commands to run in interactive sessions can go here
+    atuin init fish | source
 end
 function fish_greeting
     echo "🌀 Welcome back, constant of chaos."
@@ -28,9 +29,19 @@ function flutter-watch
     rm $PID_FILE
 end
 
+
+set -x NVM_DIR (test -z "$XDG_CONFIG_HOME" && echo "$HOME/.nvm" || echo "$XDG_CONFIG_HOME/nvm")
+if test -s "$NVM_DIR/nvm.sh"
+    bass source "$NVM_DIR/nvm.sh"
+end
 # Add to PATH
 
 set -gx PATH /Users/drakon/bin/flutter/bin $PATH
 set -gx PATH /Users/drakon/zig/master/files $PATH
 set -gx PATH /Users/drakon/.local/bin $PATH
 set -gx PATH /Users/drakon/.local/pipx/venvs/frappe-bench $PATH
+set -gx PATH /Users/drakon/zig/master/files $PATH
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.fish 2>/dev/null || :
